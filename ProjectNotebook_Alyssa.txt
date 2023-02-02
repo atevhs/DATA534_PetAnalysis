@@ -1,0 +1,23 @@
+January 14 - Project Idea Development:
+- group met together to brainstorm project ideas
+- everyone agreed to create an analysis wrapper package for the Pet Finder API
+
+January 17 - API Connection Testing:
+- group met to ensure we could successfully gather the data from the API
+- I started the proposal document
+
+January 20 - Proposal Finalization
+- group met to finalize the project proposal together
+
+January 27 - Documentation
+- I composed the first draft of the Contributions.md document
+
+January 31 - More Documentation
+ - I generated and pushed Code of Conduct document to repo
+ - Finalized contributions document.
+ 
+ February 1 - Visualizations
+ - I developed visualization function that plots histogram of dog genders and a heat map of size and age of the dogs.
+ - I pushed visualization code, contributions document, and journal to my working remote repo branch.
+ 
+ 
