@@ -1,4 +1,4 @@
-#Contributions
+# Contributions
 
 This document outlines how each team member describes the rules and contributions that each team member will have towards the project. 
 
