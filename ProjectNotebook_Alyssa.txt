@@ -20,4 +20,9 @@ January 31 - More Documentation
  - I developed visualization function that plots histogram of dog genders and a heat map of size and age of the dogs.
  - I pushed visualization code, contributions document, and journal to my working remote repo branch.
  
+ February 2 - Improve Visualizations, Error handling
+ - I improved one of the plots provided by the package to now look at age distribution by gender rather than just a histogram of genders.
+ - I updated the code to use the seaborn plotting package as it provided multi-histogram options. Removed all code associated with altair.
+ - I added appropriate exception handling to the plot.py file including a custom error class that handles invalid user inputs.
+ 
  
