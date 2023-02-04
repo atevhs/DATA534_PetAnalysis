@@ -18,7 +18,7 @@ def read_data_file(filename):
 
 ##Spliting breeds attribute to primary, secondary, mixed and unknown
 
-def file_data_wrangle(dataframe):
+def file_data_wrangle(df):
     try:
         df_new = df[["species","breeds","colors","age","gender","size","coat","attributes","environment","tags","name"]]
 
