@@ -1,0 +1,40 @@
+January 14 - Project Idea Development:
+- first group meeting to decide topic
+- Reviewed Pet Finder API
+
+January 17 - API Connection Testing:
+- second group meeting - created developer account for PetFinder.com to ingest their API
+- extracted secret key and access token for web scraping
+
+January 20 - Proposal Finalization
+- third group meeting for designing project proposal and understanding the outcome
+
+January 27 - API Data Scraping
+- ran API scraping code to ingest data from Pet finder
+
+January 28 - API Data Scraping
+- picked just first 500 pages of pets data as user got locked out.
+- modified and visualized scraped pets-dog data
+
+January 30 - Data Wrangling
+- Data wrangling for Pets-dog data 
+- failed attempt to apply apyori library due to in-compatible data
+
+January 31 - Data Wrangling and On-hot encoding, Pre-preprocessing for Association Rules
+- researched about different libraries - mlxtend and pycaret for applying association rules
+- Changed all attributes to binary 0/1 as part of pre-processing for mlxtend
+
+February 1 - Association Rules and deep-dig analysis with different support levels/confidence - Jupyter Notebook
+- Successfully extracted all rules and tried several support levels, confidence to achieve max lift
+
+February 2 - Split functions and Exception handling
+- function to process file
+- function to wrangle/one-hot encoding
+- function to apply Associations
+
+February 3 -Added Unit Test cases/ Test Suite
+- added default datafile to assert output data-frame comparison in Unittests
+- Unit Tests added for all the try exception case in the functions
+- Confirmed unit test pass
+- Calculated UT coverage
+- committed Project notebook
