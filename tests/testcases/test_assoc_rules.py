@@ -1,7 +1,5 @@
 import unittest
-from pandas.testing import assert_frame_equal
-import assoc_rules
-from assoc_rules import * 
+from petanalysis.assoc_rules import * 
 
 class TestAssocRules(unittest.TestCase):
     @classmethod
