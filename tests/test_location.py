@@ -1,6 +1,6 @@
 import unittest  # Jupyter notebook
 # from petanalysis import location
-from location import * 
+from petanalysis.location import * 
 
 class test_location(unittest.TestCase): # test class
     def setUp(self):
