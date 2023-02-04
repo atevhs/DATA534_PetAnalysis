@@ -1,0 +1,39 @@
+January 14 - Project Idea Development:
+- first group meeting to decide topic
+- Use Pet Finder API
+
+January 17 - API Connection Testing:
+- second group meeting - create account for Pet Finder API
+- get key pairs and token for web scraping
+
+January 20 - Proposal Finalization
+- third group meeting for project proposal
+
+January 27 - Data Scraping
+- Write scraping code for group members
+
+January 28 - Data Scraping
+- Scrape dog data for group members
+
+January 30 - Data Scraping
+- Write code to scrape organiztion data for myself
+ 
+January 31 - Data Wrangling and Analysis
+- Write functions to expand address to country, city, postcode
+
+February 1 - Data Wrangling and Analysis
+- Discuss with group member and decided use US data only
+- Write function to get latitude and longitude from postcode
+ 
+February 2 -Building Function
+- Write function to get latitude and longitude for postcode provided by user
+- Write function to calculate the distance
+- Write function for display data (deleted on Feb 3)
+ 
+February 3 -Building Function and Do Unit Test
+- combine display function into main function (get_shelter)
+- Add default parammeter to be none for main function so that I can perform unit test for the function
+- Unit Test for all the try exception case in the function
+- Confirm unit test passed
+- Convert excel workbook to project notebook here
+
