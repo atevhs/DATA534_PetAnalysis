@@ -44,7 +44,7 @@ class TestAssocRules(unittest.TestCase):
         
     @classmethod 
     def teardown_class(cls):
-        print("Ending Testing for Module Asoocu rules for Pet Analysis")
+        print("Ending Testing for Module Assoc rules for Pet Analysis")
         #lh.info("ending class: {} execution".format(cls.__name__))
         
 
