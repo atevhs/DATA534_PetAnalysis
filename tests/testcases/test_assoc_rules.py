@@ -1,5 +1,9 @@
+import os
+import sys
 import unittest
 from petanalysis.assoc_rules import * 
+
+sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "/../../petanalysis/")
 
 class TestAssocRules(unittest.TestCase):
     @classmethod
@@ -9,7 +13,7 @@ class TestAssocRules(unittest.TestCase):
         
     def setUp(self):
         print("Setting up Unit Test")
-        self.filename = "~/petanalysis/Dog Data all.csv"
+        self.filename = "../../petanalysis/Dog Data all.csv"
         self.df = read_data_file(self.filename)
         self.pets_data_df = file_data_wrangle(self.df)
         self.min_supp = 0.1
