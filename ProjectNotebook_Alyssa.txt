@@ -25,4 +25,7 @@ January 31 - More Documentation
  - I updated the code to use the seaborn plotting package as it provided multi-histogram options. Removed all code associated with altair.
  - I added appropriate exception handling to the plot.py file including a custom error class that handles invalid user inputs.
  
+ February 4 - Unit Test Case
+ - I developed and tested unit tests for the plot function/module and added a call to the testsuite file.
+ 
  
