@@ -1,0 +1,25 @@
+Package: petanalysis
+Type: Package
+Title: Pet from Shelters Around the US
+Version: 0.1.0
+Author: ZiYing(Sophie) Chen, Shveta Sharma, Alyssa Foote
+Maintainer: <yamapi0927@hotmail.com> <atevhs@gmail.com> <alyssa.k.foote@gmail.com>
+Description: The TIC wrapper API allows you to access the analysis on thousands of pets listed on
+              Petfinder.com and animal welfare shelters hosting these pets.
+License: GPL-3
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 7.1.2
+Depends: Python (>= 3.10)
+Imports: pgeocode,
+         math,
+         pandas,
+         mlxtend,
+         seaborn,
+         matplotlib,
+         usrerror
+Suggests:
+    markdown,
+    knitr,
+    unittest
+VignetteBuilder: knitr
