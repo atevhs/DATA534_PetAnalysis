@@ -245,14 +245,14 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 to get pet available data of the US. These functions process API <a href="https://api.petfinder.com/v2/organizations?page=1e">https://api.petfinder.com/v2/organizations?page=1</a>
 to get data from shelter information and process API <a href="https://api.petfinder.com/v2/animals?page=1">https://api.petfinder.com/v2/animals?page=1</a>
 to get the animal data. One function provide information for shelters
-and others provide information about animals. This package contains four
-internal functions to request API and perform the data wrangling which
-are not available to user. The list of 4 wrapper functions available to
-user is given below:</p>
+and others provide information about animals. This package contains 8
+internal functions, 2 for requesting API, 2 for data wrangling for
+shelter data, and 2 for data wrangling of animal data for association
+rules, and 2 for building plots which are not available to user. The
+list of 4 wrapper functions available to user is given below:</p>
 <pre><code>1. get_shelter(postcode = None)
-2. read_data_file(filename)
-3. assoc_rules(pets_data_df, min_supp, min_conf, sort_by_col, rule_cnt)
-4. visualize()</code></pre>
+2. assoc_rules(pets_data_df, min_supp, min_conf, sort_by_col, rule_cnt)
+3. visualize()</code></pre>
 <p>The detailed description of these functions as given below.</p>
 <div id="to-install-package" class="section level3">
 <h3>To install package</h3>
@@ -280,16 +280,8 @@ below.</p>
 <pre><code>get_shelter(postcode = None)
 </code></pre>
 </div>
-<div id="file_data_wrangledf" class="section level3">
-<h3>2. file_data_wrangle(df)</h3>
-<p>This function <code>file_data_wrangle</code> returns a dataframe of
-for association analysis to use. The function accepts the dataframe in
-its full form not abbreviated. The function can be called as below.</p>
-<pre><code>file_data_wrangle(df)
-</code></pre>
-</div>
 <div id="assoc_rulespets_data_df-min_supp-min_conf-sort_by_col-rule_cnt" class="section level3">
-<h3>3. assoc_rules(pets_data_df, min_supp, min_conf, sort_by_col,
+<h3>2. assoc_rules(pets_data_df, min_supp, min_conf, sort_by_col,
 rule_cnt)</h3>
 <p>This function <code>assoc_rules</code> returns a dataframe of
 association analysis result. The function accepts 5 arguments from the
@@ -299,7 +291,7 @@ called as below.</p>
 </code></pre>
 </div>
 <div id="visualize" class="section level3">
-<h3>4. visualize()</h3>
+<h3>3. visualize()</h3>
 <p>This function <code>visualize()</code> returns a age histogram or a
 size heatmap. The function would prompt the user a box to pass their
 choice. The return age histogram would show the frequency of four age
