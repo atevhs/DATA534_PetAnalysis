@@ -27,13 +27,15 @@ This R-package `petanalysis` contains 7 wrapper functions to get pet available d
 
 The detailed description of these functions as given below.
 
-### To install package
+### To import package
 
 First, user need to install `install.packages("devtools")` and then install the package from github using command `install_github('atevhs/DATA534_PetAnalysis', build_vignettes=TRUE)`. Make the optional argument `build_vignettes` true if you want to build vignettes for this package and use `browseVignettes("PetData")` to see the vignette . Then, the package can be loaded as below:
 
-# ```{r setup}
-# library(petanalysis)
-# ```
+```
+import petanalysis
+
+```
+
 
 ### 1. get_shelter(postcode = None)
 
