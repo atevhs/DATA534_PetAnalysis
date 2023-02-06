@@ -37,7 +37,13 @@ February 3 -Building Function and Do Unit Test
 - Confirm unit test passed
 - Convert excel workbook to project notebook here
 
-February 4:
+February 4 - Unit Test Coverage Check
 - modify workbook 
 - Location Unit Test Covergae: 100%
+
+February 6 - Prepare Documentations
+- Vignette from R
+- README file 
+- DESCRIPTION file
+- LICENSE
 
