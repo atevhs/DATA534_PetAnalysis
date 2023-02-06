@@ -16,14 +16,13 @@ knitr::opts_chunk$set(
 
 # Package - petanalysis
 
-This R-package `petanalysis` contains 7 wrapper functions to get pet available data of the US. These functions process API [https://api.petfinder.com/v2/organizations?page=1](https://api.petfinder.com/v2/organizations?page=1e) to get data from shelter information and process API [https://api.petfinder.com/v2/animals?page=1](https://api.petfinder.com/v2/animals?page=1) to get the animal data. One function provide information for shelters and others provide information about animals. This package contains four internal functions to request API and perform the data wrangling which are not available to user. The list of 4 wrapper functions available to user is given below:
+This R-package `petanalysis` contains 7 wrapper functions to get pet available data of the US. These functions process API [https://api.petfinder.com/v2/organizations?page=1](https://api.petfinder.com/v2/organizations?page=1e) to get data from shelter information and process API [https://api.petfinder.com/v2/animals?page=1](https://api.petfinder.com/v2/animals?page=1) to get the animal data. One function provide information for shelters and others provide information about animals. This package contains 8 internal functions, 2 for requesting API, 2 for data wrangling for shelter data, and 2 for data wrangling of animal data for association rules, and 2 for building plots which are not available to user. The list of 4 wrapper functions available to user is given below:
 
 
 ```
 1. get_shelter(postcode = None)
-2. read_data_file(filename)
-3. assoc_rules(pets_data_df, min_supp, min_conf, sort_by_col, rule_cnt)
-4. visualize()
+2. assoc_rules(pets_data_df, min_supp, min_conf, sort_by_col, rule_cnt)
+3. visualize()
 ``` 
 
 The detailed description of these functions as given below.
@@ -46,16 +45,8 @@ get_shelter(postcode = None)
 
 ```
 
-### 2. file_data_wrangle(df)
 
-This function `file_data_wrangle` returns a dataframe of for association analysis to use. The function accepts the dataframe in its full form not abbreviated. The function can be called as below. 
-
-```
-file_data_wrangle(df)
-
-```
-
-### 3. assoc_rules(pets_data_df, min_supp, min_conf, sort_by_col, rule_cnt)
+### 2. assoc_rules(pets_data_df, min_supp, min_conf, sort_by_col, rule_cnt)
 
 This function `assoc_rules` returns a dataframe of association analysis result. The function accepts 5 arguments from the user to activate the function in mlxtend package. The function can be called as below. 
 
@@ -66,7 +57,7 @@ assoc_rules(pets_data_df, min_supp, min_conf, sort_by_col, rule_cnt)
 ```
 
 
-### 4. visualize()
+### 3. visualize()
 
 This function `visualize()` returns a age histogram  or a size heatmap. The function would prompt the user a box to pass their choice. The return age histogram would show the frequency of four age groups; and the size heatmap would show the information for age and size groups of our data. The function can be called as below. 
 
