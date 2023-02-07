@@ -1,9 +1,9 @@
 import os
 import sys
 import unittest
-from petanalysis.assoc_rules import * 
 
-sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "/../../petanalysis/")
+sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "/../petanalysis/")
+from petanalysis.assoc_rules import * 
 
 class TestAssocRules(unittest.TestCase):
     @classmethod
