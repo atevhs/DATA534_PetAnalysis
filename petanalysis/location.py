@@ -15,7 +15,7 @@ def get_lat_lon(x):
 
 def get_shelter(postcode = None):
     
-    us =  pd.read_csv("US_postcode.csv", dtype = str)
+    us =  pd.read_csv("petanalysis/US_postcode.csv", dtype = str)
 
     if postcode == None:
         try:
@@ -45,7 +45,7 @@ def get_shelter(postcode = None):
         except:
             return f'The postcode should not include character!'
 
-    org = pd.read_csv("OrganizationData.csv")
+    org = pd.read_csv("petanalysis/OrganizationData.csv")
 
 
     a = get_lat_lon(postcode)

@@ -1,7 +1,10 @@
+import os
+import sys
 import unittest  # Jupyter notebook
+import pandas as pd
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "/../petanalysis/")
-from petanalysis.location import * 
+import location as loc
 
 class test_location(unittest.TestCase): # test class
     def setUp(self):
@@ -19,9 +22,9 @@ class test_location(unittest.TestCase): # test class
         print('TearDownClass')
 
     def test_getShelter(self):
-        self.assertEqual(get_shelter("AA125"), 'The postcode should not include character!')
-        self.assertEqual(get_shelter("1234"), 'The postcode should be 5 digit number!')
-        self.assertEqual(get_shelter("12345"), 'This is not a postcode in the US!')
-        self.assertIsInstance(get_shelter("30101"), pd.core.frame.DataFrame)
+        self.assertEqual(loc.get_shelter("AA125"), 'The postcode should not include character!')
+        self.assertEqual(loc.get_shelter("1234"), 'The postcode should be 5 digit number!')
+        self.assertEqual(loc.get_shelter("12345"), 'This is not a postcode in the US!')
+        self.assertIsInstance(loc.get_shelter("30101"), pd.core.frame.DataFrame)
 
 unittest.main(argv=[''], verbosity=2, exit=False)

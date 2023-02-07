@@ -26,7 +26,6 @@ jobs:
           pip install pandas
           pip install mlxtend
           pip install pgeocode
-          pip install math
           pip install seaborn
           pip install matplotlib
           pip install ipython
