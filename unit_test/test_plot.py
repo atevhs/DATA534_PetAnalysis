@@ -14,7 +14,7 @@ class test_plot(ut.TestCase):
     
     def setUp(self):
         print("setup unit test.")
-        self.dogs = pd.read_csv("../../petanalysis/Dog Data all.csv")
+        self.dogs = pd.read_csv("../petanalysis/Dog Data all.csv")
     
     def tearDown(self):
         print("Teardown unit test.")
