@@ -4,7 +4,7 @@ import unittest as ut
 import pandas as pd
 import matplotlib.pyplot as plt
 
-sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "/../../petanalysis/")
+sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "/../petanalysis/")
 import plot as dogplt
 
 class test_plot(ut.TestCase):
