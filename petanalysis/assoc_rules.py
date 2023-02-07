@@ -127,9 +127,15 @@ def file_data_wrangle(df):
     except Exception as err:
         print(f"Unexpected {err=}, {type(err)=}")
         raise
+
+def assoc_rules(min_supp=0.1, min_conf=0.8, sort_by_col='lift', rule_cnt=25):
+    try: 
+        df = read_data_file("Dog Data all.csv")
+
+        ##Wrangle the datafile
+
+        pets_data_df = file_data_wrangle(df)
         
-def assoc_rules(pets_data_df, min_supp, min_conf, sort_by_col, rule_cnt):
-    try:
         if (min_supp >=0 and min_supp<=1): 
             frequent_itemsets = apriori(pets_data_df, min_support=min_supp, use_colnames=True)
         else: 
@@ -143,6 +149,10 @@ def assoc_rules(pets_data_df, min_supp, min_conf, sort_by_col, rule_cnt):
         dat = ar_data.sort_values(by=[sort_by_col],ascending=False).head(rule_cnt)
         
         return dat
+        
+    except Exception as err:
+        print(f"Unexpected {err=}, {type(err)=}")
+        raise
         
     except Exception as err:
         print(f"Unexpected {err=}, {type(err)=}")
