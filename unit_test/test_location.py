@@ -1,3 +1,5 @@
+import os
+import sys
 import unittest  # Jupyter notebook
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "/../petanalysis/")
