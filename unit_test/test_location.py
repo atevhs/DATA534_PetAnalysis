@@ -1,6 +1,7 @@
 import os
 import sys
 import unittest  # Jupyter notebook
+import pandas as pd
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "/../petanalysis/")
 import location as loc
