@@ -1,4 +1,4 @@
-# Package - petanalysis
+# Package - petanalysis [![Pet Analysis Testing](https://github.com/atevhs/DATA534_PetAnalysis/actions/workflows/python-package.yml/badge.svg)](https://github.com/atevhs/DATA534_PetAnalysis/actions/workflows/python-package.yml)
 This Python-package `petanalysis` contains 11 wrapper functions to get pet available data of the US. These functions process API [https://api.petfinder.com/v2/organizations?page=1](https://api.petfinder.com/v2/organizations?page=1e) to get data from shelter information and process API [https://api.petfinder.com/v2/animals?page=1](https://api.petfinder.com/v2/animals?page=1) to get the animal data. One function provide information for shelters and others provide information about animals. This package contains 8 internal functions, 2 for requesting API, 2 for data wrangling for shelter data, and 2 for data wrangling of animal data for association rules, and 2 for building plots which are not available to user. The list of 3 wrapper functions available to user is given below:
 
 
