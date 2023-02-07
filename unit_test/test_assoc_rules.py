@@ -13,7 +13,7 @@ class TestAssocRules(unittest.TestCase):
         
     def setUp(self):
         print("Setting up Unit Test")
-        self.filename = "../petanalysis/Dog Data all.csv"
+        self.filename = "petanalysis/Dog Data all.csv"
         self.df = ar.read_data_file(self.filename)
         self.pets_data_df = ar.file_data_wrangle(self.df)
         self.min_supp = 0.1
