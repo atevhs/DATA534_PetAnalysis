@@ -28,4 +28,9 @@ January 31 - More Documentation
  February 4 - Unit Test Case
  - I developed and tested unit tests for the plot function/module and added a call to the testsuite file.
  
+ February 6 - Setup Continuous Integration, Documentation
+ - I setup and resolved errors so that the continuous integration was passing. 
+ - I helped improve the readme file by including instructions on how to run the package to get a visualization.
+ - I started setting up the project for release to pypi.
+ 
  
