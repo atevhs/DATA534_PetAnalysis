@@ -130,7 +130,7 @@ def file_data_wrangle(df):
 
 def assoc_rules(min_supp=0.1, min_conf=0.8, sort_by_col='lift', rule_cnt=25):
     try: 
-        df = read_data_file("Dog Data all.csv")
+        df = read_data_file("petanalysis/Dog Data all.csv")
 
         ##Wrangle the datafile
 
