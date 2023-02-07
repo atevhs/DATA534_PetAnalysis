@@ -19,7 +19,7 @@ class TestAssocRules(unittest.TestCase):
         self.min_conf = 0.8
         self.sortby = 'lift'
         self.rowcount = 25
-        self.rules = assoc_rules(0.1, 0.8, 'lift', 25)
+        self.rules = assoc_rules()
         
     def tearDown(self):
         print("Execution ended for given Unit test")
@@ -43,7 +43,7 @@ class TestAssocRules(unittest.TestCase):
         
     @classmethod 
     def teardown_class(cls):
-        print("Ending Testing for Module Paint from Sudoku Show")
+        print("Ending Testing for Assoc Rules")
         #lh.info("ending class: {} execution".format(cls.__name__))
         
 
