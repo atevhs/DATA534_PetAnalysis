@@ -1,6 +1,7 @@
 import os
 import sys
 import unittest as ut
+from unittest.mock import patch
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -20,12 +21,12 @@ class test_plot(ut.TestCase):
         print("Teardown unit test.")
     
     def test_age_historgram(self):
-        with ut.mock.patch("plot.plt.show") as show_patch:
+        with patch("plot.plt.show") as show_patch:
             dogplt.age_histogram(self.dogs)
             assert show_patch.called
             
     def test_size_heatmap(self):
-        with ut.mock.patch("plot.plt.show") as show_patch:
+        with patch("plot.plt.show") as show_patch:
             dogplt.size_heatmap(self.dogs)
             assert show_patch.called
 
