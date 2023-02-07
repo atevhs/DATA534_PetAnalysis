@@ -3,7 +3,7 @@ import sys
 import unittest
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "/../petanalysis/")
-from petanalysis.assoc_rules import * 
+import assoc_rules 
 
 class TestAssocRules(unittest.TestCase):
     @classmethod

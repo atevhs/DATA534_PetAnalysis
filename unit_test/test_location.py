@@ -1,7 +1,7 @@
 import unittest  # Jupyter notebook
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "/../petanalysis/")
-from petanalysis.location import * 
+import location 
 
 class test_location(unittest.TestCase): # test class
     def setUp(self):
