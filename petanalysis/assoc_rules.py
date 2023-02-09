@@ -4,6 +4,11 @@ from mlxtend.frequent_patterns import apriori, fpmax, fpgrowth
 from mlxtend.frequent_patterns import association_rules
 
 def read_data_file(filename):
+    """
+    Summary : This function reads the data from filename
+    Input Parameters : str - filename
+    Returns : df - dataframe
+    """
     try:
         df = pd.read_csv(filename)
         
@@ -19,6 +24,11 @@ def read_data_file(filename):
 ##Spliting breeds attribute to primary, secondary, mixed and unknown
 
 def file_data_wrangle(df):
+    """
+    Summary : This function is for wrangling data, pre-processing and One-hot encoding
+    Input : dataframe
+    Returns : dataframe
+    """
     try:
         df_new = df[["species","breeds","colors","age","gender","size","coat","attributes","environment","tags","name"]]
 
@@ -129,6 +139,18 @@ def file_data_wrangle(df):
         raise
 
 def assoc_rules(min_supp=0.1, min_conf=0.8, sort_by_col='lift', rule_cnt=25):
+    """
+    Summary : This function is for calculating association rules
+    Input :
+    ------
+        min_supp (default=0.1) type:float
+        min_conf (default=0.8) type:float
+        sort_by_col (default='lift') type:str
+        rule_cnt (default=25) type:int
+    Returns :
+    --------
+        dataframe
+    """
     try: 
         df = read_data_file("petanalysis/Dog Data all.csv")
 
