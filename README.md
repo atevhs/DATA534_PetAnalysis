@@ -12,14 +12,11 @@ This Python-package `petanalysis` contains 11 wrapper functions to get pet avail
 1. Install the package by typing: pip install petanalysis
 2. Add package to the python instance by typing: import petanalysis as pta
 
-## To create a visualization
-1. Follow install and import steps above
-2. Run the visualization function by typing: pta.plot.visualize()
-3. Follow menu prompts to choose the desired visualization.
-- if you choose option 1 you should now see a visualization like this:
-![Histogram of age and gender of dogs available for adoption on petfinder.com](HistogramSample.png)
 
 #####Note:
 This package comes with a dataset that was collected using the api listed above. For a refreshed dataset the user will need to get an api key usig the link below and follow the steps given to download the data. Scripts on how to collect multiple pages at a time can be viewed in the 'API data extraction.ipynb' notebook located in the github repo.
+
+#####Note:
+For detail please find in our tutorial document.
 
 Data Resource: https://www.petfinder.com/developers/

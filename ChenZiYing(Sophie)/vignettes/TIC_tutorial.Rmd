@@ -28,13 +28,12 @@ This Python-package `petanalysis` contains 11 wrapper functions to get pet avail
 The detailed description of these functions as given below.
 
 ### To import package
-
-First, user need to install `install.packages("devtools")` and then install the package from github using command `install_github('atevhs/DATA534_PetAnalysis', build_vignettes=TRUE)`. Make the optional argument `build_vignettes` true if you want to build vignettes for this package and use `browseVignettes("PetData")` to see the vignette . Then, the package can be loaded as below:
-
+To install the PetAnalysis package, use the command below:
 ```
-import petanalysis
-
+pip install petanalysis
 ```
+
+Alternatively, user can install the package from github using command `install_github('atevhs/DATA534_PetAnalysis')
 
 
 ### 1. get_shelter(postcode = None)
@@ -67,6 +66,9 @@ This function `visualize()` returns a age histogram  or a size heatmap. The func
 visualize()
 
 ```
+
+If you choose option 1 you should now see a visualization like this:
+![Histogram of age and gender of dogs available for adoption on petfinder.com](HistogramSample.png)
 
 
 
