@@ -13,10 +13,7 @@ This Python-package `petanalysis` contains 11 wrapper functions to get pet avail
 2. Add package to the python instance by typing: import petanalysis as pta
 
 
-#####Note:
-This package comes with a dataset that was collected using the api listed above. For a refreshed dataset the user will need to get an api key usig the link below and follow the steps given to download the data. Scripts on how to collect multiple pages at a time can be viewed in the 'API data extraction.ipynb' notebook located in the github repo.
-
-#####Note:
-For detail please find in our tutorial document.
-
-Data Resource: https://www.petfinder.com/developers/
+##### Notes:
+- This package comes with a dataset that was collected using the api listed above. For a refreshed dataset the user will need to get an api key usig the link below and follow the steps given to download the data. Scripts on how to collect multiple pages at a time can be viewed in the 'API data extraction.ipynb' notebook located in the github repo.
+- For detail please find in our tutorial document.
+- Data Resource: https://www.petfinder.com/developers/
