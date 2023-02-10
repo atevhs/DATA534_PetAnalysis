@@ -1,2 +1,0 @@
-YEAR: 2023
-COPYRIGHT HOLDER: The Pet Analysis Project, ZiYing(Sophie) Chen, Shveta Sharma, Alyssa Foote
