@@ -3,6 +3,12 @@ from math import acos, sin, cos, sqrt, atan2, radians
 import pandas as pd
 
 def get_lat_lon(x):
+    """
+    Summary : This function receive US postcode from the user and return a dictionary with longitude and latitude.
+    Input Parameters : str - postcode
+    Returns : geo dictionary
+    """
+        
     data = dict()
     nomi = pgeocode.Nominatim('us')
     query = nomi.query_postal_code(x)
@@ -14,6 +20,11 @@ def get_lat_lon(x):
 
 
 def get_shelter(postcode = None):
+     """
+    Summary : This function receive US postcode from the user and return a dataframe with shelter information.
+    Input Parameters : str - postcode
+    Returns : df - dataframe
+    """
     
     us =  pd.read_csv("petanalysis/US_postcode.csv", dtype = str)
 
