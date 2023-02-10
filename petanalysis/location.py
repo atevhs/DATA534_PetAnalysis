@@ -20,14 +20,14 @@ def get_lat_lon(x):
 
 
 def get_shelter(postcode = None):
-     """
+    """
     Summary : This function receive US postcode from the user and return a dataframe with shelter information.
     Input Parameters : str - postcode
     Returns : df - dataframe
     """
     
     us =  pd.read_csv("petanalysis/US_postcode.csv", dtype = str)
-
+    
     if postcode == None:
         try:
             print('Enter your postcode:')

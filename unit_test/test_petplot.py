@@ -6,9 +6,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "/../petanalysis/")
-import plot as dogplt
+import petplot as dogplt
 
-class test_plot(ut.TestCase):
+class test_petplot(ut.TestCase):
     @classmethod
     def setup_class(cls):
         print("Testing plot module:")
@@ -21,12 +21,12 @@ class test_plot(ut.TestCase):
         print("Teardown unit test.")
     
     def test_age_historgram(self):
-        with patch("plot.plt.show") as show_patch:
+        with patch("petplot.plt.show") as show_patch:
             dogplt.age_histogram(self.dogs)
             assert show_patch.called
             
     def test_size_heatmap(self):
-        with patch("plot.plt.show") as show_patch:
+        with patch("petplot.plt.show") as show_patch:
             dogplt.size_heatmap(self.dogs)
             assert show_patch.called
 

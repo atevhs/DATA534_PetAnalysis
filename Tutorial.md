@@ -20,7 +20,7 @@ Alternatively, user can install the package from github using command `install_g
 ```
 from petanalysis.location import *
 from petanalysis.assoc_rules import *
-from petanalysis.plot import *
+from petanalysis.petplot import *
 ```
 
 ## Display How the Function Works

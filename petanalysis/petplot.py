@@ -6,6 +6,12 @@ try:
     import usrerror as err
     
     def visualize():
+    
+        """
+        Summary : This is the main visualization function used in the petanalysis package. The user will be prompted to select an option from a menu and then the appropriate function for displaying the desired plot will be called. The menu will reappear until the user enters the option 'x' to exit the program.
+        Input : none
+        Returns : none
+        """
 
         dogs = pd.read_csv("Dog Data all.csv")
 
@@ -38,6 +44,12 @@ try:
                 print(uie.value,"is an invalid menu option, please try again.\n")
     
     def age_histogram(df):
+        """
+        Summary : This is a support function that takes in a dataframe of dog data and plots a histogram of the ages of adoptable dogs based on gender. 
+        Input : a dataframe
+        Returns : none
+        Output: the histogram plot, count of adoptable dog ages based on age and gender.
+        """
         
         df['age'] = pd.Categorical(df['age'],categories=['Baby','Young','Adult','Senior'],ordered=True)
         sns.catplot(data=df, x="age", hue="gender", kind="count")
@@ -45,6 +57,12 @@ try:
         plt.show()
 
     def size_heatmap(df):
+        """
+        Summary : This is a support function that takes in a dataframe of dog data and plots a heatmap of the ages and sizes of adoptable dogs. 
+        Input : a dataframe
+        Returns : none
+        Output: the heatmap, count of adoptable dog for each age and size group.
+        """
         
         df['age'] = pd.Categorical(df['age'],categories=['Baby','Young','Adult','Senior'],ordered=True)
         df['size'] = pd.Categorical(df['size'],categories=['Extra Large','Large','Medium','Small'],ordered=True)
