@@ -13,7 +13,7 @@ try:
         Returns : none
         """
 
-        dogs = pd.read_csv("./Dog Data all.csv")
+        dogs = pd.read_csv("petanalysis/Dog Data all.csv")
 
         while True:
             try:
