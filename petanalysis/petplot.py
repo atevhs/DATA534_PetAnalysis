@@ -10,8 +10,6 @@ try:
     import seaborn as sns
     import matplotlib.pylab as plt
     
-    import usrerror as err
-    
     def visualize():
     
         """
