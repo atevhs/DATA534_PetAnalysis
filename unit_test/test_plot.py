@@ -6,9 +6,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "/../petanalysis/")
-import plot as dogplt
+import petplot as dogplt
 
-class test_plot(ut.TestCase):
+class test_petplot(ut.TestCase):
     @classmethod
     def setup_class(cls):
         print("Testing plot module:")
