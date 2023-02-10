@@ -27,7 +27,7 @@ def get_shelter(postcode = None):
     """
     
     us =  pd.read_csv("petanalysis/US_postcode.csv", dtype = str)
-
+    
     if postcode == None:
         try:
             print('Enter your postcode:')
