@@ -3,7 +3,7 @@ try:
     import seaborn as sns
     import matplotlib.pylab as plt
     
-    import usrerror as err
+    import petanalysis.usrerror as err
     
     def visualize():
     
